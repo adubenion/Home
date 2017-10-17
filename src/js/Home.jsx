@@ -4,9 +4,8 @@ export class Home extends React.Component {
 	render() {
 		return(
 			<div>
-				<main>
-                    <p>My name is Aaron, and I'm a web developer</p>
-                </main>
+				<h1>Home</h1>
+                <p>My name is Aaron, and I'm a web developer</p>
 			</div>
 		);
 	}

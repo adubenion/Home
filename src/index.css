@@ -1,13 +1,25 @@
 body {
-	background-color:#000;
-	color:#fff;
+	background-color:grey;
+	color:#000;
 	text-align:center;
+	font-family:Verdana, Arial, sans-serif;
 }
 
 #wrapper {
-	background-color:#c63131;
+	background-color:#ceeaed;
 	max-width:800px;
 	width:100%;
 	height:100%;
 	margin:0 auto;
+}
+
+a {
+	color:black;
+}
+
+nav {
+	background-color:#ceeaed;
+	color:black;
+	font-weight:bold;
+	padding:15px;
 }

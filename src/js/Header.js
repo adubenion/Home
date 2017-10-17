@@ -6,7 +6,7 @@ export class Header extends React.Component {
         return(
             <div>
                 <header>
-                    <h1>Hello</h1>
+                    <h1>Aaron DuBenion</h1>
                     <nav>
                         <Link to="/">Home</Link> | <Link to="/About">About</Link> | <Link to="/Portfolio">Portfolio</Link> | <Link to="/Contact">Contact</Link>
                     </nav>
