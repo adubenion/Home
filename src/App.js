@@ -9,7 +9,7 @@ import {Footer} from './js/Footer';
 
 
 class App extends React.Component {
-    render() {
+    render() {  
         return(
             <div>
                 <Router>

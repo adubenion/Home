@@ -23,3 +23,7 @@ nav {
 	font-weight:bold;
 	padding:15px;
 }
+
+.clicked {
+	display:inline-table;
+}

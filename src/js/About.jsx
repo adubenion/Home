@@ -4,7 +4,7 @@ export class About extends React.Component {
 	render() {
 		return(
 			<div>
-				<h1>About Me</h1>
+				<h1>About</h1>
 				<p>
 					As a web developer with a passion for music and nerdy persuits (i.e. Anime),
 					I am recently discovering the uninhibited joy that comes along with programming. I've always loved

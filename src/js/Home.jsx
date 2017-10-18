@@ -5,8 +5,9 @@ export class Home extends React.Component {
 		return(
 			<div>
 				<h1>Home</h1>
-                <p>My name is Aaron, and I'm a web developer</p>
+                <p>My name is Aaron, and I'm a web developer in Boston, MA</p>
 			</div>
 		);
 	}
 }
+console.log('Home component loaded')
