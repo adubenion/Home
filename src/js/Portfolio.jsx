@@ -33,7 +33,7 @@ export class Portfolio extends React.Component {
 
 				<h3 id="petclick" className="clicked">Pet Shop Site</h3>
 				<div id="pet">
-				<a href=""><img src="" alt="Pet Shop Site" /></a>
+				<a target"_blank" href="http://facebook.com"><img src="" alt="Pet Shop Site" /></a>
 				</div>
 				<br />
 				<h3 id="puppyclick" className="clicked">Puppy-Lovers Site</h3>
