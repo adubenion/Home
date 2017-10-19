@@ -33,12 +33,12 @@ export class Portfolio extends React.Component {
 
 				<h3 id="petclick" className="clicked">Pet Shop Site</h3>
 				<div id="pet">
-				<a target"_blank" href="http://facebook.com"><img src="" alt="Pet Shop Site" /></a>
+				<a target="_blank" rel="noopener noreferrer" href="https://adubenion.github.io/pet-shop-example-site/"><img src="" alt="Pet Shop Site" /></a>
 				</div>
 				<br />
 				<h3 id="puppyclick" className="clicked">Puppy-Lovers Site</h3>
 				<div id="puppy">
-				<a href=""><img src="" alt="Puppy Lovers Site" /></a>
+				<a target="_blank" rel="noopener noreferrer" href="https://adubenion.github.io/puppy-site/"><img src="" alt="Puppy Lovers Site" /></a>
 				</div>
 			</div>
 		);
