@@ -8,7 +8,18 @@ export class Header extends React.Component {
                 <header>
                     <h1>Aaron DuBenion</h1>
                     <nav>
-                        <Link to="/">Home</Link> | <Link to="/About">About</Link> | <Link to="/Portfolio">Portfolio</Link> | <Link to="/Contact">Contact</Link>
+                        <Link to="/">
+                            <button>Home</button>
+                        </Link>
+                        <Link to="/About">
+                            <button>About</button>
+                        </Link>
+                        <Link to="/Portfolio">
+                            <button>Portfolio</button>
+                        </Link>
+                        <Link to="/Contact">
+                            <button>Contact</button>
+                        </Link>
                     </nav>
                 </header>
             </div>

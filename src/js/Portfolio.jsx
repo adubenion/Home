@@ -1,47 +1,80 @@
 import React from 'react';
-
-var $
-
-$ = require('jquery')
+import {PropTypes} from 'prop-types';
 
 
 
 export class Portfolio extends React.Component {
+	constructor(props) {
+		super(props);
+
+		this.state = {
+			visible: false
+		}
+		this.clickToggle = this.clickToggle.bind(this);
+	}
+
+	clickToggle() {
+		var visibility = this.state.visible;
+		if (visibility) {
+
+		}
+	}
+
 	render() {
-		$(document).ready(function() {
-	console.log('jquery is working');
-	$('#pet').hide();
-	$('#puppy').hide();
-	$('.clicked').mouseover(function() {
-		$('.clicked').css('cursor', 'pointer')
-	})
-	$('#petclick').click(function() {
-		$('#pet').toggle();
-	});
-	$('#puppyclick').click(function() {
-		$('#puppy').toggle();
-	});
-});
 		return(
 			<div>
-				<h1>Portfolio</h1>
-				<p>
-					Here's a look into past work that I've done!
-				</p>
+				<div className="row">
+					<div className="col">
+						<h1>Portfolio</h1>
+						<p>
+							Here's a look into what I'm working on!
+						</p>
 
-				<h2>Example Websites</h2>
+						<h2>Example Websites</h2>
 
-				<h3 id="petclick" className="clicked">Pet Shop Site</h3>
-				<div id="pet">
-				<a target="_blank" rel="noopener noreferrer" href="https://adubenion.github.io/pet-shop-example-site/"><img src="" alt="Pet Shop Site" /></a>
-				</div>
-				<br />
-				<h3 id="puppyclick" className="clicked">Puppy-Lovers Site</h3>
-				<div id="puppy">
-				<a target="_blank" rel="noopener noreferrer" href="https://adubenion.github.io/puppy-site/"><img src="" alt="Puppy Lovers Site" /></a>
+						<h3 className="clicked">Pet Shop Site</h3>
+						<div id="pet">
+							<a target="_blank" rel="noopener noreferrer" href={this.props.hrefArray[0].petShop}>
+								<img src="" alt="Pet Shop Site" />
+							</a>
+						</div>
+						<br />
+						<h3 id="puppyclick" className="clicked">Puppy-Lovers Site</h3>
+						<div id="puppy">
+							<a target="_blank" rel="noopener noreferrer" href={this.props.hrefArray[1].puppySite}>
+								<img src="" alt="Puppy Lovers Site" />
+							</a>
+						</div>
+						<br />
+						<h3 id="puppyclick" className="clicked">Restaurant Site</h3>
+						<div id="puppy">
+							<a target="_blank" rel="noopener noreferrer" href={this.props.hrefArray[2].restaurantSite}>
+								<img src="" alt="Puppy Lovers Site" />
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		);
 	}
 }
+
+Portfolio.PropTypes = {
+	hrefArray: PropTypes.array
+}
+
+Portfolio.defaultProps = {
+	hrefArray: [
+		{
+			petShop: "https://adubenion.github.io/pet-shop-example-site/"
+		},
+		{
+			puppySite: "https://adubenion.github.io/puppy-site/"
+		},
+		{
+			restaurantSite: "https://adubenion.github.io/restaurant-site-example/"
+		}
+	]
+}
+
 console.log('Portfolio component loaded');
