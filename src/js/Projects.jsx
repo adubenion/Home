@@ -3,7 +3,7 @@ import {PropTypes} from 'prop-types';
 
 
 
-export class Portfolio extends React.Component {
+export class Projects extends React.Component {
 	constructor(props) {
 		super(props);
 
@@ -23,9 +23,9 @@ export class Portfolio extends React.Component {
 	render() {
 		return(
 			<div>
-				<div className="row">
-					<div className="col">
-						<h1>Portfolio</h1>
+				<div>
+					<div>
+						<h1>Projects</h1>
 						<p>
 							Here's a look into what I'm working on!
 						</p>
@@ -49,9 +49,12 @@ export class Portfolio extends React.Component {
 						<h3 id="puppyclick" className="clicked">Restaurant Site</h3>
 						<div id="puppy">
 							<a target="_blank" rel="noopener noreferrer" href={this.props.hrefArray[2].restaurantSite}>
-								<img src="" alt="Puppy Lovers Site" />
+								<img src="" alt="Restaurant Site" />
 							</a>
 						</div>
+					</div>
+					<div>
+
 					</div>
 				</div>
 			</div>
@@ -59,11 +62,11 @@ export class Portfolio extends React.Component {
 	}
 }
 
-Portfolio.PropTypes = {
+Projects.PropTypes = {
 	hrefArray: PropTypes.array
 }
 
-Portfolio.defaultProps = {
+Projects.defaultProps = {
 	hrefArray: [
 		{
 			petShop: "https://adubenion.github.io/pet-shop-example-site/"

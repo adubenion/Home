@@ -2,8 +2,7 @@ import React from 'react';
 import {HashRouter as Router, Route} from 'react-router-dom';
 import {Header} from './js/Header';
 import {Home} from './js/Home.jsx';
-import {About} from './js/About.jsx';
-import {Portfolio} from './js/Portfolio.jsx';
+import {Projects} from './js/Projects.jsx';
 import {Contact} from './js/Contact.jsx';
 import {Footer} from './js/Footer';
 
@@ -17,8 +16,7 @@ class App extends React.Component {
                         <Header />
                             <div id="wrapper">
                                 <Route exact path="/" component={Home} />
-                                <Route path="/About" component={About} />
-                                <Route path="/Portfolio" component={Portfolio} />
+                                <Route path="/Projects" component={Projects} />
                                 <Route path="/Contact" component={Contact} />
                             </div>
                         <Footer />

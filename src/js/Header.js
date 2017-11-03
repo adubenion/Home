@@ -11,11 +11,8 @@ export class Header extends React.Component {
                         <Link to="/">
                             <button>Home</button>
                         </Link>
-                        <Link to="/About">
-                            <button>About</button>
-                        </Link>
-                        <Link to="/Portfolio">
-                            <button>Portfolio</button>
+                        <Link to="/Projects">
+                            <button>Projects</button>
                         </Link>
                         <Link to="/Contact">
                             <button>Contact</button>
